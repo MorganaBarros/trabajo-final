@@ -1,20 +1,29 @@
-/*SUMAR CLASES PARA NO EDITAR SOBRE LAS QUE DA BOOTSTRAP COMO FORM*/
-.navbar {
-  height: 80px;
-  background-color: white;
+body {
+  font-family: 'Assistant', sans-serif; }
+
+.menu {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  height: 80px;
+  background-color: white;
+  display: flex;
+  -webkit-justify-content: justify;
+  -ms-flex-pack: justify;
+  justify-content: justify;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  font-family: 'Assistant', sans-serif;
+  flex-flow: row wrap;
   color: #333;
   font-size: 16px; }
-  .navbar.active {
+  .menu.active {
     background-color: #0069ff; }
 
-.col-md-12 {
+.order {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -24,33 +33,127 @@
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  /*@include center(justify, center);*/
   background: linear-gradient(180deg, #66a5ff, #0069ff);
   color: white;
   padding-top: 64px;
   padding-bottom: 64px; }
-  .col-md-12 h1 {
+  .order h1 {
     font-weight: 300;
     letter-spacing: 1px; }
-  .col-md-12 .left {
+  .order .left {
     margin-bottom: 32px; }
-  .col-md-12 .form-horizontal {
+  .order .form {
     display: block;
     width: 435px; }
-  .col-md-12 .form-control {
+  .order .form-detail {
     width: 100%;
     height: 48px;
     border: 1px solid #fff;
     background: rgba(255, 255, 255, 0.1);
     font-size: 14px;
     color: white; }
-  .col-md-12 input::-webkit-input-placeholder {
+  .order input::-webkit-input-placeholder {
     color: white; }
-  .col-md-12 button {
-    width: 100%;
-    background-color: white;
-    color: #0069ff; }
-    .col-md-12 button p {
-      font-weight: 300; }
+
+button {
+  width: 100%;
+  background-color: white;
+  color: #0069ff; }
+  button p {
+    font-weight: 300;
+    font-size: 10px; }
+    button p a {
+      text-decoration: none;
+      color: white; }
+      button p a:hover {
+        text-decoration: none;
+        color: #0069ff; }
+
+.features {
+  padding: 96px 0; }
+
+.section-title {
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 64px; }
+
+.feat-column {
+  line-height: 24px; }
+  .feat-column img {
+    height: 140px; }
+  .feat-column .column {
+    padding-top: 64px;
+    padding-left: 64px; }
+
+.pricing {
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  /*@include center(justify, center);*/ }
+  .pricing ul {
+    list-style: none; }
+    .pricing ul li {
+      margin-top: 16px;
+      margin-left: 16px;
+      text-transform: uppercase;
+      font-weight: 600;
+      display: inline; }
+      .pricing ul li a:hover {
+        text-decoration: none; }
+
+.carousel img {
+  display: block;
+  margin: auto; }
+
+.button {
+  width: 260px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  /*@include center(justify, center);*/
+  padding: 0 32px;
+  height: 48px;
+  background-color: #0069ff;
+  text-align: center;
+  color: white;
+  border-radius: 3px;
+  margin: auto;
+  margin-top: 32px; }
+
+.under-button {
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 16px; }
+
+.map-wrap {
+  padding-top: 96px; }
+  .map-wrap img {
+    display: block;
+    margin: auto; }
+
+.contributors img {
+  display: block;
+  margin: auto; }
 
 /*@media (min-width: 768px){
 	body{

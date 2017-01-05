@@ -37,7 +37,7 @@
 <body>
 
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="menu navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -53,18 +53,7 @@
             <li><a href="#">Product</a></li>
             <li><a href="#">Solutions</a></li>
             <li><a href="#">Pricing</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">API</a></li>
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Log in</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
+            <li><a href="#">Community</a></li>  
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">API</a></li>
@@ -74,22 +63,22 @@
           </ul>
         </div><!--/.nav-collapse -->
       </div><!--/container-->
-    </nav>
+    </nav><!--menu-->
 
-    <section class="col-md-12">
+    <section class="col-md-12 order">
       <article class="left">
         <h1>Cloud computing, <br>designed for developers.</h1>
 
         <!-- Formulario -->
-        <form class="form-horizontal">
+        <form class="form form-horizontal">
           <div class="form-group">
             <div class="col-sm-10">
-              <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+              <input type="email" class="form-detail form-control" id="inputEmail3" placeholder="Email">
             </div>
           </div><!--/form-horizontal-->
           <div class="form-group">
             <div class="col-sm-10">
-              <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+              <input type="password" class="form-detail form-control" id="inputPassword3" placeholder="Password">
             </div>
           </div>
           <div class="form-group">
@@ -105,12 +94,93 @@
       <article class="right">
         <img src="https://www.digitalocean.com/assets/media/homepage/create-5fe2f870.gif" width="524" height="411">
       </article>
-    </section><!--/column-medium-6-->
+    </section><!--/col-md-12-->
 
-    <section class="seamlessly">
-      <h2>Seamlessly manage your infrastructure</h2>
+
+    <!-- Features -->
+    <section class="features">
+      <h2 class="section-title row">Seamlessly manage your infrastructure</h2>
+
+    <div class="feat-column container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="column col-md-4">
+          <img src="https://www.digitalocean.com/assets/media/homepage/deploy-in-seconds-a5f58113.svg">
+          <h2>Deploy in seconds</h2>
+          <p>Spin up a Droplet and get root access to a compute instance in only 55 seconds. </p>
+        </div>
+        <div class="column col-md-4">
+          <img src="https://www.digitalocean.com/assets/media/homepage/all-ssd-cloud-bb78282d.svg">
+          <h2>SSD performance</h2>
+          <p>The first and only all-SSD cloud. Whether it's our Droplet compute instances or Block Storage, everything runs on SSD. </p>
+       </div>
+        <div class="column col-md-4">
+          <img src="https://www.digitalocean.com/assets/media/homepage/flexible-api-55da975f.svg">
+          <h2>Simple API</h2>
+          <p>An intuitive API and command line utilities allow you to run large-scale production workloads.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column col-md-4">
+          <img src="https://www.digitalocean.com/assets/media/homepage/highly-available-storage-fd7639fc.svg">
+          <h2>Highly available storage</h2>
+          <p>Never run out of space with the ability to attach multiple highly available volumes up to 16TB to a Droplet. </p>
+        </div>
+        <div class="column col-md-4">
+          <img src="https://www.digitalocean.com/assets/media/homepage/robust-networking-8130c43e.svg">
+          <h2>Lightning fast network</h2>
+          <p>Each hypervisor has a fault tolerant and redundant 40Gbps network to ensure uptime and throughput. </p>
+       </div>
+        <div class="column col-md-4">
+          <img src="https://www.digitalocean.com/assets/media/homepage/team-collaboration-898f387c.svg">
+          <h2>Teams work together</h2>
+          <p>Easily manage your cloud with your team by inviting others and setting access permissions.</p>
+        </div>
+      </div><!--/row-->
+    </div><!--/feat-column container-->
+
+      <hr>
+    </section><!--/features-->
+    <!-- /Features -->
+
+
+    <!-- Pricing -->
+
+    <section class="pricing">
+      <h2 class="section-title row">Straightforward pricing</h2>
+      <ul>
+        <li><a href="#">Monthly</a></li>
+        <li><img src="imagenes/btn_switcher.png"></li>
+        <li><a href="#">Hourly</a></li>
+      </ul>
+
+      <figure class="carousel">
+        <img src="imagenes/carousel.png">
+      </figure>
+
+      <a href="#" class="button">View more plans</a>
+      <p class="under-button">Pricing in USD. Excludes any applicable tax.</p>
+    </section><!--/pricing-->
+
+    <!-- /Pricing -->
+
+    <!-- Map -->
+    <section class="map-wrap">
+      <h2 class="section-title row">Develop locally, deploy globally</h2>
+      <img src="imagenes/map.png">
+
+      <a href="#" class="button">Create Droplet</a>
+      <hr>
+    </section><!--/map-wrap-->
+
+    <!-- Map -->
+
+    <section class="contibutors row">
+      <h2 class="section-title row">Join over 30,000 teams on DigitalOcean</h2>
+      <img src="https://www.digitalocean.com/assets/media/homepage/customers-d2d64e45.svg" width="80%">
+      <a href="#" class="button">Create Droplet</a>
+      <hr>
     </section>
-
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
